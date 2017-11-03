@@ -1,6 +1,6 @@
 <?php
 
-namespace common\ueditor\Support;
+namespace Ueditor\Support;
 
 use Ueditor\Library\Uploader;
 
