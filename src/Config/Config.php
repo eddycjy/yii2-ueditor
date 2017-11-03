@@ -56,7 +56,7 @@ return [
         ".flv", ".swf", ".mkv", ".avi", ".rm", ".rmvb", ".mpeg", ".mpg",
         ".ogg", ".ogv", ".mov", ".wmv", ".mp4", ".webm", ".mp3", ".wav", ".mid"], /* 上传视频格式显示 */
     
-        /* 上传文件配置 */
+    /* 上传文件配置 */
     "fileActionName"=> "uploadfile", /* controller里,执行上传视频的action名称 */
     "fileFieldName"=> "upfile", /* 提交的文件表单名称 */
     "filePathFormat"=> "/upload/file/{yyyy}{mm}{dd}/{time}{rand:6}", /* 上传保存路径,可以自定义保存路径和文件名格式 */
