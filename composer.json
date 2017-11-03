@@ -1,0 +1,17 @@
+{
+    "name": "eddycjy/yii2-ueditor",
+    "description": "Yii2 widget for ueditor",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "EDDYCJY",
+            "email": "313687982@qq.com"
+        }
+    ],
+    "require": {},
+	"autoload" : {
+		"psr-4": {
+			"Eeditor\\": "src/"
+		}
+	}
+}
