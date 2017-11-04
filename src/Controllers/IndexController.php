@@ -24,6 +24,25 @@ class IndexController extends Controller
 
     public $config;
 
+    public $params = [
+        'imageUrlPrefix',
+        'imagePathFormat',
+        'scrawlUrlPrefix',
+        'scrawlPathFormat',
+        'snapscreenUrlPrefix',
+        'snapscreenPathFormat',
+        'catcherUrlPrefix',
+        'catcherPathFormat',
+        'videoUrlPrefix',
+        'videoPathFormat',
+        'fileUrlPrefix',
+        'filePathFormat',
+        'imageManagerUrlPrefix',
+        'imageManagerListPath',
+        'fileManagerUrlPrefix',
+        'fileManagerListPath',
+    ];
+
     public function init()
     {
         $this->isCallback = (isset($_GET["callback"])) ? true : false;
@@ -37,16 +56,22 @@ class IndexController extends Controller
         $this->config = Helpers::getConfigs();
     }
 
-    public function behaviors()
+    public function beforeAction($action) 
     {
-        return [
-            [
-                'class' => 'yii\filters\ContentNegotiator',
-                'formats' => [
-                    'application/json' => Response::FORMAT_JSON
-                ],
-            ]
-        ];
+        $module = \Yii::$app->controller->module;
+
+        $moduleConfigs = [];
+        $defaultConfigs = Helpers::getConfigs();
+
+        foreach ($this->params as $value) {
+            if(! empty($module->$value)) {
+                $moduleConfigs[$value] = $module->$value;
+            }
+        }
+
+        $this->config = array_merge($defaultConfigs, $moduleConfigs);
+
+        return true;
     }
 
     public function actionRun()
@@ -139,14 +164,14 @@ class IndexController extends Controller
 
         if ($this->isCallback) {
             if (preg_match("/^[\w_]+$/", $_GET["callback"])) {
-                return htmlspecialchars($_GET["callback"]) . '(' . $result . ')';
+                echo htmlspecialchars($_GET["callback"]) . '(' . json_encode($result) . ')';
             } else {
-                return [
+                echo json_encode([
                     'state'=> 'callback参数不合法'
-                ];
+                ]);
             }
         } else {
-            return $result;
+            echo json_encode($result);
         }
     }
 
