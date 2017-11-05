@@ -2,7 +2,6 @@
 
 [![Latest Stable Version](https://poser.pugx.org/EDDYCJY/yii2-ueditor/v/stable)](https://packagist.org/packages/eddycjy/yii2-ueditor)
 [![License](https://poser.pugx.org/EDDYCJY/yii2-ueditor/license)](https://packagist.org/packages/eddycjy/yii2-ueditor)
-[![Total Downloads](https://poser.pugx.org/EDDYCJY/yii2-ueditor/downloads)](https://packagist.org/packages/eddycjy/yii2-ueditor)
 
 # Requirements
 
