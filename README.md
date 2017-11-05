@@ -35,7 +35,7 @@ Add to configs file
 
 ```
 
-or change ue-configs, upload folder default value @app/web//upload
+or change ue-configs, upload folder default value **@app/web/upload**
 
 ``` php
 'modules' => [
