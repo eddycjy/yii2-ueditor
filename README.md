@@ -24,7 +24,7 @@ Add to configs file
 
 - yii-basic : config/web.php 
 
-- yii-advanced: common\config\main.php
+- yii-advanced: common/config/main.php
 
 ``` php
 'modules' => [
