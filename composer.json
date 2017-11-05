@@ -9,10 +9,10 @@
         }
     ],
     "require": {},
-    "minimum-stability": "dev",
-	"autoload" : {
-		"psr-4": {
-			"Ueditor\\": "src/"
-		}
-	}
+    "minimum-stability": "1.0.0",
+    "autoload" : {
+        "psr-4": {
+            "Ueditor\\": "src/"
+        }
+    }
 }
