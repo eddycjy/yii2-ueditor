@@ -8,6 +8,7 @@
 
 - PHP >= 5.4.0
 - Composer
+- Yii2
 
 # Installation
 
