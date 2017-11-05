@@ -1,8 +1,5 @@
 # yii2-ueditor
 
-[![Latest Stable Version](https://poser.pugx.org/EDDYCJY/yii2-ueditor/v/stable)](https://packagist.org/packages/eddycjy/yii2-ueditor)
-[![License](https://poser.pugx.org/EDDYCJY/yii2-ueditor/license)](https://packagist.org/packages/eddycjy/yii2-ueditor)
-
 # Requirements
 
 - PHP >= 5.4.0
