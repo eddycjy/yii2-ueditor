@@ -42,7 +42,7 @@ or change ue-configs, upload folder default value @app/web//upload
     'ueditor' => [
          'class' => 'Ueditor\UeditorModule',
          'imageUrlPrefix' => '',
-         'imagePathFormat' => '',
+         'imagePathFormat' => '/upload/image/{yyyy}{mm}{dd}/{time}{rand:6}',
          'scrawlUrlPrefix' => '',
          'scrawlPathFormat' => '',
          'snapscreenUrlPrefix' => '',
