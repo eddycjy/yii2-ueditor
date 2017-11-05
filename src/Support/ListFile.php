@@ -4,6 +4,11 @@ namespace Ueditor\Support;
 
 use Ueditor\Helpers;
 
+/**
+ * @author EDDYCJY <313687982@qq.com>
+ * @since  1.0
+ * @link   https://github.com/EDDYCJY/yii2-ueditor
+ */
 class ListFile
 {
 	private $allowFiles;

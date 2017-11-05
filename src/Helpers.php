@@ -4,6 +4,11 @@ namespace Ueditor;
 
 use Ueditor\Container;
 
+/**
+ * @author EDDYCJY <313687982@qq.com>
+ * @since  1.0
+ * @link   https://github.com/EDDYCJY/yii2-ueditor
+ */
 class Helpers
 {
 	public static function getFiles($path, $allowFiles, &$files = [])

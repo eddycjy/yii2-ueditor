@@ -10,6 +10,11 @@ use Ueditor\Support\Upload;
 use Ueditor\Support\ListFile;
 use Ueditor\Support\Crawler;
 
+/**
+ * @author EDDYCJY <313687982@qq.com>
+ * @since  1.0
+ * @link   https://github.com/EDDYCJY/yii2-ueditor
+ */
 class IndexController extends Controller
 {
 	public $enableCsrfValidation = false;
