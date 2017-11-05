@@ -49,5 +49,6 @@ class UeditorModule extends Module
 	{
 		parent::init();
 	}
+	
 }
 
