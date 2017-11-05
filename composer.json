@@ -16,7 +16,6 @@
         "php": ">=5.4",
         "yiisoft/yii2": "*"
     },
-    "minimum-stability": "dev",
     "autoload" : {
         "psr-4": {
             "Ueditor\\": "src/"
