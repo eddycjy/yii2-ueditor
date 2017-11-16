@@ -9,7 +9,7 @@
 # Installation
 
 ``` sh
-composer require eddycjy/yii2-ueditor
+composer require eddycjy/yii2-ueditor "@dev"
 ```
 
 # Configuration
